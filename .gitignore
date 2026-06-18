@@ -1,0 +1,30 @@
+# Credentials and internal infrastructure
+mcp/
+
+# Personal system snapshots with machine-specific paths
+_inventory/
+
+# Archived personal memories
+memories-templates/
+
+# Personal launchd plists with hardcoded machine paths
+_attic/
+
+# Mixed personal/org-specific commands (symlink to skills/claude-skills)
+commands
+
+# Internal agent metadata (org-specific labels and descriptions)
+launchd-agents-meta.json
+
+# Plugin runtime cache — not source, regenerated on install
+plugins/claude/cache/
+plugins/claude/.last_inuse_sweep
+
+# Personal AI instructions (symlink target contains personal copilot config)
+instructions/_ai-instructions/
+
+# scripts/token-refresh is a nested git repo — submodule or exclude
+scripts/
+
+# macOS
+.DS_Store
