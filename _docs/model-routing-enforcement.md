@@ -35,14 +35,13 @@ Add to `~/.claude/settings.json`:
       "Agent(model:claude-fable-5)"
     ]
   },
-  "availableModels": ["sonnet", "haiku", "claude-sonnet-4-6", "claude-haiku-4-5"]
 }
 ```
 
 - `"model": "sonnet"` — closes the inheritance gap; unspecified subagents fall back to Sonnet, not Opus
 - `permissions.deny` — intercepts Agent tool calls at the permissions layer (separate from hooks)
-- `availableModels` — hides Opus from the interactive `/model` picker (UI-only, no `enforceAvailableModels` needed)
-- **To use Opus deliberately:** `claude --model opus`. Subagent calls still get denied.
+- **Do NOT add `availableModels`** — despite documentation suggesting it's UI-only, it enforces at the session level and blocks `claude --model opus` and `/model opus`. Tested and confirmed broken.
+- **To use Opus deliberately:** `claude --model opus`. Subagent calls still get denied by `permissions.deny`.
 
 ### Layer 2 — Routing mandate injected every turn
 
