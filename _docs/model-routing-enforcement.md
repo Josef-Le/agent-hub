@@ -114,13 +114,16 @@ session (where you already are Sonnet/Opus), not via a subagent.
 
 ## Verification
 
-1. Start a new Claude Code session (default or `--model sonnet`)
-2. Run: `Agent({ description: "test", prompt: "echo hi", model: "opus" })`
-3. Expected: **permission denied** — tool never executes
-4. Run: `Agent({ description: "test", prompt: "echo hi", model: "haiku" })`
-5. Expected: runs as Haiku 4.5
-6. Run: `Agent({ description: "test", prompt: "echo hi" })` (no model)
-7. Expected: runs as Sonnet 4.6 (session default)
+Run three parallel agent calls from a default (sonnet) session:
+
+```
+Agent(model:"opus")       → Permission to use Agent with model:opus has been denied.
+Agent(model:"haiku")      → model=claude-haiku-4-5-20251001
+Agent()  // no model      → model=claude-sonnet-4-6
+```
+
+Verified live 2026-06-19 on Claude Code 2.1.181. All three behaved as expected:
+opus denied at permissions layer, haiku ran as Haiku 4.5, unspecified inherited Sonnet 4.6.
 
 ---
 
