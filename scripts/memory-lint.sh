@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
-# memory-lint.sh — mechanical health check for the three-tier memory system
-# Runs weekly via com.josef.memory-lint launchd job (Sunday 04:00)
+# memory-lint.sh — mechanical health check for the two-tier memory system (hot+warm)
+# Runs daily via com.josef.memory-lint launchd job (04:00); logs to llm-wiki/memory-lint-launchd.log
 # Contradiction detection and consolidation merges are LLM-only; not done here.
 
 set -euo pipefail
