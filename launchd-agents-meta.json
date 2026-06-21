@@ -4,52 +4,52 @@
       "description": "Syncs MCP server configs from agent-hub/mcp/registry.json to Claude Code when the registry changes"
     },
     "ai.agenthub.mcp.confluence": {
-      "description": "Confluence MCP :3001 \u2014 supergateway stateless wrapper; gives Claude search+read access to Confluence pages"
+      "description": "Confluence MCP :3001 — supergateway stateless wrapper; gives Claude search+read access to Confluence pages"
     },
     "ai.agenthub.mcp.playwright": {
-      "description": "Playwright MCP :3002 \u2014 shared headless Chrome daemon; per-session isolated browser context for web automation"
+      "description": "Playwright MCP :3002 — shared headless Chrome daemon; per-session isolated browser context for web automation"
     },
     "ai.agenthub.mcp.neo4j-local": {
-      "description": "Neo4j local MCP :3003 \u2014 FastMCP HTTP, shared Bolt pool; gives Claude Cypher access to local Neo4j (Docker)"
+      "description": "Neo4j local MCP :3003 — FastMCP HTTP, shared Bolt pool; gives Claude Cypher access to local Neo4j (Docker)"
     },
     "ai.agenthub.mcp.neo4j-staging": {
-      "description": "Neo4j staging MCP :3004 \u2014 FastMCP HTTP, shared Bolt pool; gives Claude Cypher access to DAC staging Neo4j"
+      "description": "Neo4j staging MCP :3004 — FastMCP HTTP, shared Bolt pool; gives Claude Cypher access to DAC staging Neo4j"
     },
     "ai.agenthub.mcp.azure-devops": {
-      "description": "Azure DevOps MCP :3005 \u2014 supergateway stateless; repos, PRs, pipelines, work items for VaronisIO org"
+      "description": "Azure DevOps MCP :3005 — supergateway stateless; repos, PRs, pipelines, work items for VaronisIO org"
     },
     "ai.agenthub.mcp.datadog": {
-      "description": "Datadog MCP :3006 \u2014 supergateway stateless; logs, metrics, monitors, dashboards for US+EU orgs"
+      "description": "Datadog MCP :3006 — supergateway stateless; logs, metrics, monitors, dashboards for US+EU orgs"
     },
     "ai.agenthub.mcp.github-work": {
-      "description": "GitHub work MCP :3007 \u2014 supergateway stateless; jleizerovich_varonis account repos, PRs, issues, code search"
+      "description": "GitHub work MCP :3007 — supergateway stateless; jleizerovich_varonis account repos, PRs, issues, code search"
     },
     "ai.agenthub.mcp.github-personal": {
-      "description": "GitHub personal MCP :3008 \u2014 supergateway stateless; Josef-Le personal account repos, PRs, issues"
+      "description": "GitHub personal MCP :3008 — supergateway stateless; Josef-Le personal account repos, PRs, issues"
     },
     "ai.agenthub.mcp.fetch": {
-      "description": "Fetch MCP :3009 \u2014 supergateway stateless; HTTP fetch tool for retrieving web pages and APIs"
+      "description": "Fetch MCP :3009 — supergateway stateless; HTTP fetch tool for retrieving web pages and APIs"
     },
     "ai.agenthub.mcp.postgres-master": {
-      "description": "Postgres master MCP :3010 \u2014 FastMCP HTTP, shared asyncpg pool (max 20); query/execute/list_tables/describe_table on Varonis master DB"
+      "description": "Postgres master MCP :3010 — FastMCP HTTP, shared asyncpg pool (max 20); query/execute/list_tables/describe_table on Varonis master DB"
     },
     "ai.agenthub.mcp.postgres-global": {
-      "description": "Postgres global MCP :3011 \u2014 FastMCP HTTP, shared asyncpg pool (max 20); query/execute on Varonis global DB"
+      "description": "Postgres global MCP :3011 — FastMCP HTTP, shared asyncpg pool (max 20); query/execute on Varonis global DB"
     },
     "ai.agenthub.mcp.teams": {
-      "description": "Teams MCP :3012 \u2014 supergateway stateful (24h session); skypetoken warm per session; read/send Varonis Teams messages"
+      "description": "Teams MCP :3012 — supergateway stateful (24h session); skypetoken warm per session; read/send Varonis Teams messages"
     },
     "ai.agenthub.mcp.mail": {
-      "description": "Mail MCP :3013 \u2014 supergateway stateful (24h session); OWA bearer warm per session; read Varonis email"
+      "description": "Mail MCP :3013 — supergateway stateful (24h session); OWA bearer warm per session; read Varonis email"
     },
     "ai.agenthub.mcp.dac-access": {
-      "description": "DAC access MCP :3014 \u2014 FastMCP HTTP; find_tenant + request_access tools for DAC tenant UI access via ADO pipeline"
+      "description": "DAC access MCP :3014 — FastMCP HTTP; find_tenant + request_access tools for DAC tenant UI access via ADO pipeline"
     },
     "ai.agenthub.skill-sync": {
       "description": "Syncs skills from agent-hub/commands/ to Claude Code + Hermes when the directory changes"
     },
     "ai.hermes.gateway": {
-      "description": "Core Hermes platform daemon \u2014 message gateway, cron execution, job orchestration"
+      "description": "Core Hermes platform daemon — message gateway, cron execution, job orchestration"
     },
     "ai.hermes.tlaams.heartbeat": {
       "description": "Checks TLAAMS job health every 5 min; sends Teams alerts on failures"
@@ -61,16 +61,16 @@
       "description": "Watches Hermes sessions dir; processes new sessions and sends TLAAMS alerts"
     },
     "ai.hermes.tlaams.state-enforcer": {
-      "description": "Autonomous state corrector \u2014 detects and heals TLAAMS job drift every 2 min"
+      "description": "Autonomous state corrector — detects and heals TLAAMS job drift every 2 min"
     },
     "ai.hermes.token-refresh": {
       "description": "Refreshes Copilot + Axiom Security tokens every 20 min; browser-auth on expiry"
     },
     "com.crondeck.bff": {
-      "description": "CronDeck backend-for-frontend (FastAPI) \u2014 serves /api/* for the CronDeck web UI"
+      "description": "CronDeck backend-for-frontend (FastAPI) — serves /api/* for the CronDeck web UI"
     },
     "com.crondeck.web": {
-      "description": "[RETIRED 2026-06-18] CronDeck React web UI \u2014 Vite dev server for the cron management dashboard"
+      "description": "[RETIRED 2026-06-18] CronDeck React web UI — Vite dev server for the cron management dashboard"
     },
     "com.dac-knowledge.eval": {
       "description": "[DISABLED] Old DAC knowledge evaluation pipeline"
@@ -79,56 +79,71 @@
       "description": "[DISABLED] Old DAC knowledge ingestion pipeline"
     },
     "com.dac.knowledge.ingest": {
-      "description": "[DISABLED] DAC knowledge ingestion \u2014 indexes DAC codebase into vector store"
+      "description": "[DISABLED] DAC knowledge ingestion — indexes DAC codebase into vector store"
     },
     "com.dac.knowledge.server": {
-      "description": "DAC knowledge RAG server (:8765) \u2014 answers 'how does X work in DAC' queries"
+      "description": "DAC knowledge RAG server (:8765) — answers 'how does X work in DAC' queries"
     },
     "com.dac.orchestrator.nightly": {
-      "description": "Nightly DAC orchestrator \u2014 runs heavy analysis jobs during the 23:00-05:00 window"
+      "description": "Nightly DAC orchestrator — runs heavy analysis jobs during the 23:00-05:00 window"
     },
     "com.hermes.copilot-token-refresh": {
       "description": "[DISABLED] Old Copilot token refresh (superseded by ai.hermes.token-refresh)"
     },
     "com.jleizerovich.pr-watcher": {
-      "description": "PR watcher \u2014 monitors open PRs across repos and sends Teams alerts on review requests"
+      "description": "PR watcher — monitors open PRs across repos and sends Teams alerts on review requests"
     },
     "com.josef.global-memory-watchdog": {
-      "description": "Memory watchdog \u2014 kills runaway processes when RSS exceeds threshold; enforces OOM safety gate"
+      "description": "Memory watchdog — kills runaway processes when RSS exceeds threshold; enforces OOM safety gate"
     },
     "com.josef.mem-pressure-killer": {
-      "description": "[DISABLED] Memory pressure killer \u2014 aggressive process termination under swap pressure"
+      "description": "[DISABLED] Memory pressure killer — aggressive process termination under swap pressure"
     },
     "com.josef.night-train": {
-      "description": "Night-train gate \u2014 allows heavy 30B model work only during 23:00-05:00 window"
+      "description": "Night-train gate — allows heavy 30B model work only during 23:00-05:00 window"
     },
     "com.oktagon.phoenix": {
-      "description": "[DISABLED] Oktagon phoenix daemon \u2014 managed Oktagon AI service lifecycle"
+      "description": "[DISABLED] Oktagon phoenix daemon — managed Oktagon AI service lifecycle"
     },
     "com.rtk.discover": {
-      "description": "RTK discover \u2014 weekly (Mon 09:00) scan of Claude Code history for missed RTK optimization opportunities"
+      "description": "RTK discover — weekly (Mon 09:00) scan of Claude Code history for missed RTK optimization opportunities"
     },
     "com.varonis.dac-access": {
-      "description": "DAC Access menu-bar app \u2014 one-click login to any DAC tenant UI via cookie injection"
+      "description": "DAC Access menu-bar app — one-click login to any DAC tenant UI via cookie injection"
     },
     "com.varonis.ssm-tunnel": {
-      "description": "SSM tunnel (:8080) \u2014 AWS Systems Manager tunnel proxy for claude_proxied sessions"
+      "description": "SSM tunnel (:8080) — AWS Systems Manager tunnel proxy for claude_proxied sessions"
     },
     "com.oktagon.devcenter": {
-      "description": "Oktagon Developer Center \u2014 unified developer hub at :8501 (plugin-architecture Streamlit; replaces io.token-saver.dashboard)",
+      "description": "Oktagon Developer Center — unified developer hub at :8501 (plugin-architecture Streamlit; replaces io.token-saver.dashboard)",
       "program": "/Users/jleizerovich/workspace/ai/oktagon-devcenter"
     },
     "com.varonis.teams-statusbar": {
-      "description": "Teams status-bar app \u2014 menu-bar badge showing unread Teams message count"
+      "description": "Teams status-bar app — menu-bar badge showing unread Teams message count"
     },
     "ai.agenthub.mcp.model-router": {
-      "description": "Model Router MCP :3015 \u2014 classifies agent task descriptions to haiku/sonnet; shadow mode on (logs to ~/.claude/agent-routing.log, returns sonnet until validated)"
+      "description": "Model Router MCP :3015 — classifies agent task descriptions to haiku/sonnet; shadow mode on (logs to ~/.claude/agent-routing.log, returns sonnet until validated)"
     },
     "com.josef.memory-lint": {
       "description": "Daily memory system health check (04:00): MEMORY.md line count, broken links, orphan warm files, broken [[cross-links]], stale files, consolidation candidates. Result in llm-wiki/memory-lint-launchd.log and appended to llm-wiki/log.md."
     },
     "com.josef.memory-autocommit": {
       "description": "Nightly git commit of memory/*.md changes (23:50). Stages all .md files, skips if nothing to commit. Log at llm-wiki/memory-autocommit.log."
+    },
+    "com.ax.weekly-report": {
+      "description": "ax weekly report (Sun 03:00) — local agent-spend + skill-usage digest: per-model cost, main-vs-subagent split, routable-to-cheaper savings, skill taste/bloat. Refreshes the local ax graph then writes ~/.local/share/ax/reports/latest.txt. No API tokens (all local). Swap-gated. Manual: ax-report"
+    },
+    "com.dac.codegen.nightly": {
+      "description": "Nightly codegen validation at 23:00 — runs AI agent on ADO ticket #2554196 with --no-push to validate empty-diff fix"
+    },
+    "com.dac.synthetic.nightly": {
+      "description": "Synthetic DPO generation at 01:00, 13:00, 17:00 (3x daily) — generates query/retrieval pairs for LoRA fine-tuning; targets ~150 pairs/day"
+    },
+    "com.dac.lora.trigger": {
+      "description": "LoRA fine-tuning trigger at 22:00 daily — checks if accumulated DPO pairs >= 2,000, exports to /tmp/dpo_triples_ready.jsonl, creates checkpoint"
+    },
+    "com.dac.autonomous.nightly": {
+      "description": "Autonomous agent selector at 23:30 daily — scores ADO tickets from queue, selects top 3, runs in --dry-run mode for now (integration pending)"
     }
   }
 }
